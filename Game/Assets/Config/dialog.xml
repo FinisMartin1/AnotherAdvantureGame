@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dialog>
+	<DialogTree name="testNpc">
+		<Speech log="Hello World!">
+			
+		</Speech>
+	</DialogTree>
+	
+</dialog>

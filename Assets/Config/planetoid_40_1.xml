@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Rock type="Planetoid" area="62.546" layer="1" shell="true" index="3" children="0 1 2">
+    <Body cx="18.0623" cy="18.7643" a="0"/>
+    <Sprite sx="0" sy="0" sw="37.0156" sh="40.1386"/>
+    <Children>
+        <Rock type="Planetoid" area="32.28" layer="2" index="0">
+            <Body cx="10.4936" cy="14.3602" x="-3.7243" y="8.9438" a="2.1749" va="0" vx="1" vy="0" />
+            <Sprite sx="0" sy="74.7291" sw="20.5719" sh="30.3467"/>
+        </Rock>
+        <Rock type="Planetoid" area="31.1609" layer="2" index="1">
+            <Body cx="11.3785" cy="16.9639" x="-6.7991" y="-6.4732" a="4.1082" va="0" vx="1" vy="0" />
+            <Sprite sx="0" sy="105.0759" sw="22.0186" sh="29.681"/>
+        </Rock>
+        <Rock type="Planetoid" area="36.8511" layer="2" index="2">
+            <Body cx="8.1815" cy="17.1743" x="8.1588" y="-1.4345" a="6.2832" va="0" vx="1" vy="0" />
+            <Sprite sx="0" sy="40.1386" sw="20.696" sh="34.5905"/>
+        </Rock>
+    </Children>
+</Rock>

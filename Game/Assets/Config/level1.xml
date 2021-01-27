@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Level>
+  <Object type="00" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="BattleSpace64.png" path2="hBattleSpace.png" sx="0" sy="0" sw="64" sh="64" cx="10" cy="10" />
+    <Component name="clickable"/>
+  </Object>
+<Object type="01" type2="00">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="64" cy="64"  />
+    <Component name="sprite" path="player64.png" path2="" sx="0" sy="0" sw="64" sh="64" cx="10" cy="10" />
+  <Component name="stats" lev="20" vat="30" end="30" att="30" str="30" dex="30" int="30" fai="30" agi="30" per="30" luc="30"/>
+  <Component name="equipment" w="1" chest="3" leg="6" arm="7" helmet="0" boots="8"/>
+    <Component name="clickable"/>
+  <Component name="input"/>
+  <Component name="movespace"/>
+  <Component name="effect"/>
+  <Component name="ability" abil="1" buff="0"/>
+  <Component name="gui"/>
+  <Component name="faction" fac="0]\"/>
+  <Component name="inventory"/>
+  </Object>
+  <Object type="02" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="moveSpace64.png" path2="" sx="0" sy="0" sw="64" sh="64" cx="10" cy="10" />
+    <Component name="detectedenemy"/>
+    <Component name="clickable"/>
+  </Object>
+<Object type="03" type2="01">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="64" cy="64"  />
+    <Component name="sprite" path="crab64.png" path2="" sx="0" sy="0" sw="64" sh="64" cx="10" cy="10" />
+  <Component name="stats" lev="3" vat="15" end="10" att="1" str="5" dex="3" int="3" fai="3" agi="5" per="5" luc="10"/>
+  <Component name="equipment" w="2" chest="4" leg="0" arm="0" helmet="0" boots="0"/>
+    <Component name="clickable"/>
+  <Component name="movespace"/>
+  <Component name="effect"/>
+  <Component name="ability" abil="3" buff="0"/>
+  <Component name="enemyai"/>
+  <Component name="faction" fac="1"/>
+  <Component name="pathfinder"/>
+  </Object>
+  <Object type="04" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="attackSpace64.png" path2="" sx="0" sy="0" sw="64" sh="64" cx="10" cy="10" />
+    <Component name="clickable"/>
+    <Component name="settarget"/>
+  </Object>
+  <Object type="05" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="healthBar.png" path2="" sx="0" sy="0" sw="200" sh="16" cx="10" cy="10" />
+    <Component name="deleteself" deletetype="2"/>
+  </Object>
+  <Object type="06" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="miniHealthBar.png" path2="" sx="0" sy="0" sw="50" sh="1" cx="10" cy="10" />
+  </Object>
+  <Object type="07" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="healthBarRetract.png" path2="" sx="0" sy="0" sw="200" sh="16" cx="10" cy="10" />
+    <Component name="deleteself" deletetype="1"/>
+  </Object>
+  <Object type="08" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="manaBar.png" path2="" sx="0" sy="0" sw="200" sh="8" cx="8" cy="10" />
+  </Object>
+  <Object type="09" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="stanimaBar.png" path2="" sx="0" sy="0" sw="200" sh="8" cx="8" cy="10" />
+  </Object>
+  <Object type="10" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="healthAndManaBarRetract.png" path2="" sx="0" sy="0" sw="200" sh="8" cx="10" cy="10" />
+    <Component name="deleteself" deletetype="1"/>
+  </Object>
+  <Object type="11" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="frame.png" path2="" sx="0" sy="0" sw="200" sh="8" cx="10" cy="10" />
+    <Component name="deleteself" deletetype="1"/>
+    </Object>
+  <Object type="12" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="BattleSpace.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+    <Component name="clickable"/>
+    <Component name="createobject"/>
+  </Object>
+  <Object type="13" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="woodFloorTile.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+  </Object>
+  <Object type="14" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="menuBackGround.png" path2="" sx="0" sy="0" sw="34" sh="34" cx="10" cy="10" />
+  </Object>
+  <Object type="15" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="emptySpace.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+    <Component name="frame"/>
+    <Component name="clickable"/>
+    <Component name="deleteself" deletetype="2"/>
+  </Object>
+  <Object type="16" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="inventorySpace.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+    <Component name="deleteself" deletetype="2"/>
+  </Object>
+  <Object type="17" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="menuOcupy.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+    <Component name="deleteself" deletetype="3"/>
+  </Object>
+	<Object type="18" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="inventorySpace.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+		<Component name="deleteself" deletetype="4"/>
+	</Object>
+	<Object type="19" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="emptySpace.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+		<Component name="eframe"/>
+		<Component name="clickable"/>
+		<Component name="deleteself" deletetype="4"/>
+	</Object>
+	<Object type="20" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="menuHotKey.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+		<Component name="deleteself" deletetype="4"/>
+	</Object>
+</Level>

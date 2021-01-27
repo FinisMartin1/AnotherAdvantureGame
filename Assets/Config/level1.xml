@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Level>
+  <Object type="00" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="BattleSpace64.png" path2="hBattleSpace.png" sx="0" sy="0" sw="64" sh="64" cx="10" cy="10" />
+    <Component name="clickable"/>
+  </Object>
+<Object type="01" type2="00">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="64" cy="64"  />
+    <Component name="sprite" path="playerMale.png" path2="" sx="0" sy="0" sw="64" sh="64" cx="10" cy="10" />
+  <Component name="stats" lev="20" vat="30" end="30" att="30" str="30" dex="30" int="30" fai="30" agi="30" per="30" luc="30"/>
+  <Component name="equipment" w="1" chest="3" leg="6" arm="7" helmet="0" boots="8"/>
+    <Component name="clickable"/>
+  <Component name="input" isPlayer="1"/>
+  <Component name="movespace"/>
+  <Component name="effect"/>
+  <Component name="ability" abil="1" buff="0"/>
+  <Component name="gui"/>
+  <Component name="faction" fac="0]\"/>
+  <Component name="inventory"/>
+  </Object>
+  <Object type="02" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="moveSpace64.png" path2="" sx="0" sy="0" sw="64" sh="64" cx="10" cy="10" />
+    <Component name="detectedenemy"/>
+    <Component name="clickable"/>
+  </Object>
+<Object type="03" type2="01">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="64" cy="64"  />
+    <Component name="sprite" path="crab64.png" path2="" sx="0" sy="0" sw="64" sh="64" cx="10" cy="10" />
+  <Component name="stats" lev="3" vat="15" end="10" att="1" str="5" dex="3" int="3" fai="3" agi="5" per="5" luc="10"/>
+  <Component name="equipment" w="2" chest="4" leg="0" arm="0" helmet="0" boots="0"/>
+    <Component name="clickable"/>
+  <Component name="movespace"/>
+  <Component name="effect"/>
+  <Component name="ability" abil="3" buff="0"/>
+  <Component name="enemyai"/>
+  <Component name="faction" fac="1"/>
+  <Component name="pathfinder"/>
+  </Object>
+  <Object type="04" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="attackSpace64.png" path2="" sx="0" sy="0" sw="64" sh="64" cx="10" cy="10" />
+    <Component name="clickable"/>
+    <Component name="settarget"/>
+  </Object>
+  <Object type="05" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="healthBar.png" path2="" sx="0" sy="0" sw="200" sh="16" cx="10" cy="10" />
+    <Component name="deleteself" deletetype="2"/>
+  </Object>
+  <Object type="06" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="miniHealthBar.png" path2="" sx="0" sy="0" sw="50" sh="1" cx="10" cy="10" />
+  </Object>
+  <Object type="07" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="healthBarRetract.png" path2="" sx="0" sy="0" sw="200" sh="16" cx="10" cy="10" />
+    <Component name="deleteself" deletetype="1"/>
+  </Object>
+  <Object type="08" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="manaBar.png" path2="" sx="0" sy="0" sw="200" sh="8" cx="8" cy="10" />
+  </Object>
+  <Object type="09" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="stanimaBar.png" path2="" sx="0" sy="0" sw="200" sh="8" cx="8" cy="10" />
+  </Object>
+  <Object type="10" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="healthAndManaBarRetract.png" path2="" sx="0" sy="0" sw="200" sh="8" cx="10" cy="10" />
+    <Component name="deleteself" deletetype="1"/>
+  </Object>
+  <Object type="11" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="frame.png" path2="" sx="0" sy="0" sw="200" sh="8" cx="10" cy="10" />
+    <Component name="deleteself" deletetype="1"/>
+    </Object>
+  <Object type="12" type2="04">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="BattleSpace.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+    <Component name="clickable"/>
+    <Component name="createobject"/>
+  </Object>
+  <Object type="13" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="woodFloorTile.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+  </Object>
+  <Object type="14" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="menuBackGround.png" path2="" sx="0" sy="0" sw="34" sh="34" cx="10" cy="10" />
+  </Object>
+  <Object type="15" type2="04">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="emptySpace.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+    <Component name="frame"/>
+    <Component name="clickable"/>
+    <Component name="deleteself" deletetype="2"/>
+  </Object>
+  <Object type="16" type2="04">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="inventorySpace.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+    <Component name="deleteself" deletetype="2"/>
+  </Object>
+  <Object type="17" type2="04">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="menuOcupy.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+    <Component name="deleteself" deletetype="3"/>
+  </Object>
+	<Object type="18" type2="04">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="inventorySpace.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+		<Component name="deleteself" deletetype="4"/>
+	</Object>
+	<Object type="19" type2="04">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="emptySpace.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+		<Component name="eframe"/>
+		<Component name="clickable"/>
+		<Component name="deleteself" deletetype="4"/>
+	</Object>
+	<Object type="20" type2="04">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="menuHotKey.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+		<Component name="deleteself" deletetype="5"/>
+	</Object>
+	<Object type="21" type2="03">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="64" cy="64"  />
+		<Component name="sprite" path="player64.png" path2="" sx="0" sy="0" sw="64" sh="64" cx="10" cy="10" />
+		<Component name="stats" lev="20" vat="30" end="30" att="30" str="30" dex="30" int="30" fai="30" agi="30" per="30" luc="30"/>
+		<Component name="equipment" w="1" chest="3" leg="6" arm="7" helmet="0" boots="8"/>
+		<Component name="clickable"/>
+		<Component name="movespace"/>
+		<Component name="effect"/>
+		<Component name="ability" abil="1" buff="0"/>
+		<Component name="gui"/>
+		<Component name="faction" fac="0]\"/>
+		<Component name="dialog" log="testNpc"/>
+	    <Component name="input" isPlayer="0"/>
+	</Object>
+	<Object type="22" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="charcterFrame.png" path2="" sx="0" sy="0" sw="192" sh="192" cx="10" cy="10" />
+	</Object>
+	<Object type="23" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="dialogFrame.png" path2="" sx="0" sy="0" sw="480" sh="64" cx="10" cy="10" />
+	    <Component name="text"/>
+	</Object>
+	<Object type="24" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+	    <Component name="text"/>
+	</Object>
+	<Object type="25" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="steelChest.png" path2="" sx="0" sy="0" sw="480" sh="64" cx="10" cy="10" />
+		<Component name="deleteself" deletetype="6"/>
+	    <Component name="follow"/>
+	
+	</Object>
+	<Object type="26" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="steelChestArm.png" path2="" sx="0" sy="0" sw="480" sh="64" cx="10" cy="10" />
+		<Component name="deleteself" deletetype="6"/>
+	    <Component name="follow"/>
+	
+	</Object>
+	<Object type="27" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="steelHandsMale.png" path2="" sx="0" sy="0" sw="480" sh="64" cx="10" cy="10" />
+		<Component name="deleteself" deletetype="6"/>
+	    <Component name="follow"/>
+	
+	</Object>
+	<Object type="28" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="steelGrevMale.png" path2="" sx="0" sy="0" sw="480" sh="64" cx="10" cy="10" />
+		<Component name="deleteself" deletetype="6"/>
+	    <Component name="follow"/>
+	
+	</Object>
+	<Object type="29" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="steelBootsMale.png" path2="" sx="0" sy="0" sw="480" sh="64" cx="10" cy="10" />
+		<Component name="deleteself" deletetype="6"/>
+	    <Component name="follow"/>
+	
+	</Object>
+	<Object type="30" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="blueWall_1.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+	</Object>
+	<Object type="31" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="blueWall_2.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+	</Object>
+	<Object type="32" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="blueWall_3.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+	</Object>
+	<Object type="33" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="blueWallTop_1.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+	</Object>
+	<Object type="34" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="blueWallTop_2.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+	</Object>
+	<Object type="35" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="blueWallTop_3.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+	</Object>
+	<Object type="36" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="blueWallTop_4.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+	</Object>
+	<Object type="37" type2="05">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="attackSpace.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+		<Component name="wall"/>
+	</Object>
+	<Object type="38" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="bottomBed.png" path2="" sx="0" sy="0" sw="64" sh="64" cx="10" cy="10" />
+	</Object>
+	<Object type="39" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="topBed.png" path2="" sx="0" sy="0" sw="64" sh="64" cx="10" cy="10" />
+	</Object>
+	<Object type="40" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="nightTable.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+	</Object>
+	<Object type="41" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="grassTile.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+	</Object>
+	<Object type="42" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="pathTile_1.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+	</Object>
+	<Object type="43" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="pathTile_2.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+	</Object>
+	<Object type="44" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="pathTile_3.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+	</Object>
+	<Object type="45" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="pathTile_4.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+	</Object>
+	<Object type="46" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="pathTile_5.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+	</Object>
+	<Object type="47" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="villHouse_1.png" path2="" sx="0" sy="0" sw="197" sh="124" cx="10" cy="10" />
+	</Object>
+	<Object type="48" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="villHouse_2.png" path2="" sx="0" sy="0" sw="190" sh="200" cx="10" cy="10" />
+	</Object>
+	<Object type="49" type2="05">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="waypoint.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+		<Component name="waypoint"/>
+	</Object>
+	<Object type="50" type2="04">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="night.png" path2="" sx="0" sy="0" sw="1000" sh="1000" cx="10" cy="10" />
+		<Component name="night"/>
+	</Object>
+	<Object type="51" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="stairLeft.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+	</Object>
+	<Object type="52" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="stairMed.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+	</Object>
+	<Object type="53" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="stairRight.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+	</Object>
+	<Object type="54" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="stoneWall.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+	</Object>
+	<Object type="55" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="stoneWallTop.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+	</Object>
+	<Object type="56" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="counterBottom.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+	</Object>
+	<Object type="57" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="counterBottomStove.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+	</Object>
+	<Object type="58" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="counterTop.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+	</Object>
+	<Object type="59" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="counterTopStove.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+	</Object>
+	<Object type="60" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="counterTopSink.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+	</Object>
+	<Object type="61" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="doubleBedPurple.png" path2="" sx="0" sy="0" sw="64" sh="64" cx="10" cy="10" />
+	</Object>
+	<Object type="62" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="blueWallTop_5.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+	</Object>
+	<Object type="63" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="blueWallTop_6.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+	</Object>
+	<Object type="64" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="blueWallTop_7.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+	</Object>
+	<Object type="65" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="blueWallTop_8.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+	</Object>
+	<Object type="66" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="blueWallTop_9.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+	</Object>
+	<Object type="67" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="stairLeftWood.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+	</Object>
+	<Object type="68" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="stairRightWood.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+	</Object>
+	<Object type="69" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="woodTable.png" path2="" sx="0" sy="0" sw="64" sh="96" cx="10" cy="10" />
+	</Object>
+	<Object type="70" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="woodStool.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+	</Object>
+	<Object type="71" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="woodDresser.png" path2="" sx="0" sy="0" sw="32" sh="64" cx="10" cy="10" />
+	</Object>
+	<Object type="72" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="woodDresser.png" path2="" sx="0" sy="0" sw="32" sh="64" cx="10" cy="10" />
+	</Object>
+	<Object type="73" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="outside.png" path2="" sx="0" sy="0" sw="32" sh="64" cx="10" cy="10" />
+		<Component name="window"/>
+	</Object>
+	<Object type="74" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="window.png" path2="" sx="0" sy="0" sw="32" sh="64" cx="10" cy="10" />
+
+	</Object>
+	<Object type="75" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="villHouse_3.png" path2="" sx="0" sy="0" sw="256" sh="256" cx="10" cy="10" />
+	</Object>
+	<Object type="76" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="inn_1.png" path2="" sx="0" sy="0" sw="256" sh="256" cx="10" cy="10" />
+	</Object>
+	<Object type="77" type2="05">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="waypoint.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+		<Component name="waypoint"/>
+	</Object>
+</Level>

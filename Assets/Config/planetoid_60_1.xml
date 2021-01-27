@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Rock area="102.7521" layer="1" shell="true" index="7">
+    <Body cx="32.5498" cy="32.196" x="-0.6187" y="-0.0414" a="0"/>
+    <Sprite sx="0" sy="0" sw="65.1603" sh="62.5048"/>
+    <Children>
+        <Rock area="44.5533" layer="2" index="0">
+            <Body cx="17.0919" cy="19.9844" x="3.2091" y="15.923" a="1.496"/>
+            <Sprite sx="32.9342" sy="62.5048" sw="31.3852" sh="40.9701"/>
+        </Rock>
+        <Rock area="44.0454" layer="2" index="1">
+            <Body cx="19.2531" cy="21.729" x="-16.1704" y="3.8796" a="2.992"/>
+            <Sprite sx="0" sy="114.4621" sw="33.1428" sh="40.043"/>
+        </Rock>
+        <Rock area="38.7814" layer="2" index="2">
+            <Body cx="17.7692" cy="21.3701" x="-7.6634" y="-14.5547" a="4.3384"/>
+            <Sprite sx="0" sy="154.505" sw="33.4706" sh="33.8806"/>
+        </Rock>
+        <Rock area="54.6443" layer="2" index="6">
+            <Body cx="15.5635" cy="26.0237" x="14.2114" y="-6.221" a="5.984"/>
+            <Sprite sx="0" sy="62.5048" sw="32.9342" sh="51.9573"/>
+            <Children>
+                <Rock area="34.4384" layer="3" index="3">
+                    <Body cx="7.8664" cy="17.7147" x="7.7471" y="-16.2536" a="0"/>
+                    <Sprite sx="33.1428" sy="114.4621" sw="21.7838" sh="31.2401"/>
+                </Rock>
+                <Rock area="22.7816" layer="3" index="4">
+                    <Body cx="7.9978" cy="10.4011" x="21.3474" y="-9.2241" a="0"/>
+                    <Sprite sx="33.4706" sy="154.505" sw="15.6543" sh="20.0242"/>
+                </Rock>
+                <Rock area="35.7631" layer="3" index="5">
+                    <Body cx="15.2793" cy="9.5713" x="15.1052" y="3.8716" a="0"/>
+                    <Sprite sx="0" sy="188.3856" sw="34.3852" sh="24.4364"/>
+                </Rock>
+            </Children>
+        </Rock>
+    </Children>
+</Rock>
