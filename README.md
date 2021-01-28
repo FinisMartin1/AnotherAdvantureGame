@@ -1,7 +1,7 @@
-Description
+Description:
 Another Adventure Game is a grid based rpg. The character can interact with the world trough dialog with npcs and actions that the player commits.
 
-Completed
+Completed:
 -Main engine of game
 -Made  a grid base combat system
 -Improved the combat system
@@ -23,19 +23,19 @@ Completed
 -Day and Night Cycle
 -View Distance for ai to engage player
 
-Currently Working On
+Currently Working On:
 -Camera System
 -Creating Beginning Area
 -A way to have npc navigate through all of the maps that the player is not on.
 
-Main Features Coming Soon
+Main Features Coming Soon:
 -Weather/Season System
 -Economy System
 -Quest System
 -Law System
 Controls
 
-Non-Battle Controls
+Non-Battle Controls:
 W- Move Up
 A- Move Left
 S- Move Down
@@ -46,7 +46,7 @@ Left-Click on npc- To Talk
 1-0- To use abilities
 
 
-Battle Controls
+Battle Controls:
 Left-Click on square - To move player to space
 N- To end turn
 
