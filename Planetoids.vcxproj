@@ -70,8 +70,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\Users\xman1\Documents\OpenGl\Include;$(ProjectDir)ThirdParty\tinyxml2-master;$(IncludePath);$(ProjectDir)ThirdParty\SDL2\include;$(ProjectDir)ThirdParty\SDL2_image;$(ProjectDir)ThirdParty\Box2D;$(ProjectDir)ThirdParty\Box2D\Box2D\Common;$(ProjectDir)ThirdParty\SDL2_ttf</IncludePath>
-    <LibraryPath>C:\Users\xman1\Documents\OpenGl\Libraries;$(ProjectDir)ThirdParty\SDL2\lib\x86;$(ProjectDir)ThirdParty\SDL2_image;$(ProjectDir)ThirdParty\Box2D\Box2D\lib;$(ProjectDir)ThirdParty\SDL2_ttf;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\xman1\Documents\OpenGl\Include;$(ProjectDir)Third Party\tinyxml2-master;$(IncludePath);$(ProjectDir)Third Party\SDL2\include;$(ProjectDir)Third Party\SDL2_image;$(ProjectDir)Third Party\Box2D;$(ProjectDir)Third Party\Box2D\Box2D;$(ProjectDir)Third Party\Box2D\Box2D\Common;$(ProjectDir)Third Party\SDL2_ttf</IncludePath>
+    <LibraryPath>C:\Users\xman1\Documents\OpenGl\Libraries;$(ProjectDir)Third Party\SDL2\lib\x86;$(ProjectDir)Third Party\SDL2_image;$(ProjectDir)Third Party\Box2D\Box2D\lib;$(ProjectDir)Third Party\SDL2_ttf;$(LibraryPath)</LibraryPath>
     <OutDir>$(ProjectDir)Game\</OutDir>
     <IntDir>$(ProjectDir)Temp\</IntDir>
   </PropertyGroup>
@@ -113,8 +113,8 @@
     </Link>
     <PreBuildEvent>
       <Command>xcopy "$(ProjectDir)Assets" "$(ProjectDir)Game\Assets" /e /s /r /k
-copy "$(ProjectDir)ThirdParty\SDL2_image\*.dll" "$(ProjectDir)"
-copy "$(ProjectDir)ThirdParty\SDL2\lib\x86\*.dll" "$(ProjectDir)"</Command>
+copy "$(ProjectDir)Third Party\SDL2_image\*.dll" "$(ProjectDir)"
+copy "$(ProjectDir)Third Party\SDL2\lib\x86\*.dll" "$(ProjectDir)"</Command>
     </PreBuildEvent>
     <PostBuildEvent>
       <Command>
@@ -283,7 +283,7 @@ copy "$(ProjectDir)ThirdParty\SDL2\lib\x86\*.dll" "$(ProjectDir)"</Command>
     <ClInclude Include="Source\Wall.h" />
     <ClInclude Include="Source\Waypiont.h" />
     <ClInclude Include="Source\Window.h" />
-    <ClInclude Include="ThirdParty\tinyxml2-master\tinyxml2.h" />
+    <ClInclude Include="Third Party\tinyxml2-master\tinyxml2.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Abilty.cpp" />
@@ -337,7 +337,7 @@ copy "$(ProjectDir)ThirdParty\SDL2\lib\x86\*.dll" "$(ProjectDir)"</Command>
     <ClCompile Include="Source\Wall.cpp" />
     <ClCompile Include="Source\Waypoint.cpp" />
     <ClCompile Include="Source\Window.cpp" />
-    <ClCompile Include="ThirdParty\tinyxml2-master\tinyxml2.cpp" />
+    <ClCompile Include="Third Party\tinyxml2-master\tinyxml2.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
