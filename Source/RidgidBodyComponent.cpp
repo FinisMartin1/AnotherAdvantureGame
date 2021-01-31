@@ -60,8 +60,8 @@ GameObject* RidgidBody::update() {
 	}
 	else
 	{
-		position->x = position->x - view->velocity->x- view->camera->x;
-		position->y = position->y - view->velocity->y- view->camera->y;
+		position->x = position->x;
+		position->y = position->y;
 	}
 
 	return nullptr;

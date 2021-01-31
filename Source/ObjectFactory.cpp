@@ -66,7 +66,7 @@ GameObject* ObjectFactory::applyXML(tinyxml2::XMLElement* ObjectXML)
 		string componentName = componentElement->Attribute("name");
 		if (componentName == "sprite")
 		{
-			object->addComponent(new Sprite(object, componentElement,library));
+			object->addComponent(new Sprite(object, componentElement,library,view));
 		}
 		else if (componentName == "body")
 		{
@@ -180,7 +180,7 @@ GameObject* ObjectFactory::applyXML(tinyxml2::XMLElement* ObjectXML)
 		}
 		else if (componentName == "waypoint")
 		{
-		object->addComponent(new Waypoint(object, componentElement,this,overworld));
+		object->addComponent(new Waypoint(object, componentElement,this,overworld,view));
 		}
 		else if (componentName == "night")
 		{

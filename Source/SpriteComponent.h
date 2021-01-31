@@ -10,7 +10,7 @@ class GameObject;
 class TextureLibrary;
 class Texture;
 class ObjectTemplate;
-
+class View;
 struct Vector2D;
 
 
@@ -19,7 +19,7 @@ using namespace std;
 class Sprite : public Component
 {
 public:
-	Sprite(GameObject* owner, tinyxml2::XMLElement* componentElement, TextureLibrary* library);
+	Sprite(GameObject* owner, tinyxml2::XMLElement* componentElement, TextureLibrary* library,View* view);
 	~Sprite();
 	void initialize(TextureLibrary* library, ObjectTemplate* temp);
 
@@ -42,7 +42,7 @@ protected:
 	int frameX = 1;
 	int timer = 10;
 	Vector2D* sposition=new Vector2D();
-	
+	Vector2D* tempPos = new Vector2D();
 	Vector2D* scenter=new Vector2D();
 	Texture* texture;
 	Texture* texture2;
@@ -56,6 +56,7 @@ protected:
 	string path2;
 
 	RGBA color;
+	View* view;
 };
 
 

@@ -30,6 +30,14 @@ public:
 	{
 		return height;
 	}
+	int getBrushX()
+	{
+		return brushX;
+	}
+	int getBrushY()
+	{
+		return brushY;
+	}
 	void changeBrushType(string type)
 	{
 		brushType = type;
@@ -38,17 +46,29 @@ public:
 	{
 		this->factory = factory;
 	}
+	void setBrushX(int brushX)
+	{
+		this->brushX = brushX;
+	}
+	void setBrushY(int brushY)
+	{
+		this->brushY = brushY;
+	}
 	void saveLevel(vector<GameObject*> objects);
 	void loadLevel(string level);
 	void playLevel(string level);
 	bool isLevelEditor = false;
 	string getBrush() { return brushType; };
+
+
 private:
 	int width;
 	int height;
 	ObjectFactory* factory;
 	View* view;
 	std::string brushType = "13";
+	int brushX;
+	int brushY;
 
 };
 #endif // !LEVELEDITOR_H

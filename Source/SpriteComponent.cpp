@@ -7,7 +7,7 @@
 #include "View.h"
 #include <string>
 
-Sprite::Sprite(GameObject* owner, tinyxml2::XMLElement* componentElement, TextureLibrary* library) : Component(owner)
+Sprite::Sprite(GameObject* owner, tinyxml2::XMLElement* componentElement, TextureLibrary* library,View* view) : Component(owner)
 {
 // update this!!
 	this->library = library;
@@ -23,7 +23,8 @@ Sprite::Sprite(GameObject* owner, tinyxml2::XMLElement* componentElement, Textur
 	sposition->y = sy;
 	scenter->x = cx;
 	scenter->y = cy;
-
+	tempPos->x = 0;
+	tempPos->y = 0;
 	int sw;
 	int sh;
 	componentElement->QueryIntAttribute("sw", &sw);
@@ -41,7 +42,8 @@ Sprite::Sprite(GameObject* owner, tinyxml2::XMLElement* componentElement, Textur
 	setTexture(&path);
 	componentElement->QueryStringAttribute("path", &pathName);
 	ready = true;
-	
+	this->view = view;
+
 }
 
 Sprite::~Sprite() {}
@@ -67,6 +69,9 @@ void Sprite::draw()
 {
 	
 	RidgidBody* body = getOwner()->getComponent<RidgidBody>();
+	
+	tempPos->x = body->position->x;
+	tempPos->y = body->position->y;
 	if (getOwner()->id2 == "00")
 	{
 		if (getOwner()->currentDir == getOwner()->DOWN|| getOwner()->currentDir == getOwner()->DOWNRIGHT|| getOwner()->currentDir == getOwner()->DOWNLEFT)
@@ -144,7 +149,9 @@ void Sprite::draw()
 		}
 
 	}
-	if(ready)texture->draw(body->position, body->angle, body->center, rect);
+	tempPos->x = tempPos->x - view->camera->x;
+	tempPos->y = tempPos->y - view->camera->y;
+	if(ready)texture->draw(tempPos, body->angle, body->center, rect);
 }
 
 void Sprite::setTexture(string * path)

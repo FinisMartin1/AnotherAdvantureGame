@@ -90,6 +90,7 @@ void LevelEditor::loadLevel(string level)
 	int x;
 	int y;
 	file >> x >> y;
+	createMap(x, y);
 	file >> type >> x;
 	if (x == 1)
 	{

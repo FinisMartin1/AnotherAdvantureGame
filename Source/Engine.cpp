@@ -281,7 +281,7 @@ void Engine::update()
 		{
 			objects[i]->isBattle = true;
 		}
-		if (objects[i]->id != "01")
+		if (objects[i]->id == "01")
 		{
 			view->camera->x = objects[i]->getComponent<RidgidBody>()->position->x-400;
 			view->camera->y = objects[i]->getComponent<RidgidBody>()->position->y-400;
@@ -480,6 +480,14 @@ void Engine::commandList(string command)
 		cin >> level;
 		objects.clear();
 		editor.get()->playLevel(level);
+	}
+	if (command == "setBushSize")
+	{
+		int x, y;
+		cin >> x >> y;
+		editor->setBrushX(x);
+		editor->setBrushY(y);
+		cout << "Brush size has been set to" << x << " x " << y << endl;
 	}
 }
 

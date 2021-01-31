@@ -12,9 +12,9 @@ Overworld::~Overworld()
 
 GameObject* Overworld::getEntityById(string id)
 {
-	for (int i = 0; i < entitys.size() - 1; i++)
+	for (int i = 0; i < entitys.size(); i++)
 	{
-		if (id == entitys[i]->primaryId)
+		if (id == entitys[i]->id)
 		{
 			return entitys[i];
 		}
@@ -27,10 +27,7 @@ GameObject* Overworld::getPlayer()
 {
 	for (int i = 0; i < entitys.size(); i++)
 	{
-		if (entitys[i]->isPlayer == true)
-		{
-			return entitys[i];
-		}
+
 
 	}
 	return nullptr;
