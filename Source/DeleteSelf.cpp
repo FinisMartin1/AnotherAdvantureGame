@@ -89,10 +89,27 @@ GameObject* DeleteSelf::update()
 		{
 			timer--;
 		}
+		break;
 	case 6:
 
-			
-
+		if (overworld->contOpen == false || battle->contOpen == false)
+		{
+			getOwner()->isDead = true;
+		}
+		break;
+	case 7:
+		if (overworld->contOpen == false || battle->contOpen == false)
+		{
+			getOwner()->isDead = true;
+		}
+		if (timer == 0)
+		{
+			getOwner()->isDead = true;
+		}
+		else
+		{
+			timer--;
+		}
 		break;
 	}
 

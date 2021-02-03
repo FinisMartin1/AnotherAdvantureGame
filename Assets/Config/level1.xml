@@ -396,4 +396,32 @@
 		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
 		<Component name="sprite" path="blueWallTop_12.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
 	</Object>
+	<Object type="81" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="woodenChest.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+	</Object>
+	<Object type="82" type2="02">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="container.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+		<Component name="container"/>
+		<Component name="clickable"/>
+		<Component name="input"/>
+	</Object>
+	<Object type="83" type2="04">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="emptySpace.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+		<Component name="frame"/>
+		<Component name="clickable"/>
+		<Component name="deleteself" deletetype="6"/>
+	</Object>
+	<Object type="84" type2="04">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="inventorySpace.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+		<Component name="deleteself" deletetype="6"/>
+	</Object>
+	<Object type="85" type2="04">
+		<Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+		<Component name="sprite" path="menuOcupy.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+		<Component name="deleteself" deletetype="7"/>
+	</Object>
 </Level>

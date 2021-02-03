@@ -20,6 +20,7 @@ InputHandler::InputHandler()
 	keyStates[Inputs::EQUIPMENT] = false;
 	keyStates[Inputs::J] = false;
 	keyStates[Inputs::L] = false;
+	keyStates[Inputs::EXIT] = false;
 }
 
 void InputHandler::update( SDL_Event* event)
@@ -127,6 +128,11 @@ void InputHandler::update( SDL_Event* event)
 			keyStates[input] = true;
 
 		}
+		if (event->key.keysym.sym == SDLK_ESCAPE)
+		{
+			input = Inputs::EXIT;
+			keyStates[input] = true;
+		}
 		break;
 	case SDL_KEYUP:
 		if (event->key.keysym.sym == SDLK_a)
@@ -229,6 +235,11 @@ void InputHandler::update( SDL_Event* event)
 			input = Inputs::L;
 			keyStates[input] = false;
 
+		}
+		if (event->key.keysym.sym == SDLK_ESCAPE)
+		{
+			input = Inputs::EXIT;
+			keyStates[input] = false;
 		}
 		break;
 	case SDL_QUIT:

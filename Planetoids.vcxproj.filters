@@ -188,6 +188,9 @@
     <ClInclude Include="Third Party\tinyxml2-master\tinyxml2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Container.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Abilty.cpp">
@@ -344,6 +347,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Third Party\tinyxml2-master\tinyxml2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Container.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

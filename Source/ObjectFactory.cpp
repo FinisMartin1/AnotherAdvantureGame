@@ -33,6 +33,7 @@
 #include"Waypiont.h"
 #include"Night.h"
 #include"Window.h"
+#include"Container.h"
 #include<iostream>
 using namespace tinyxml2;
 
@@ -189,6 +190,10 @@ GameObject* ObjectFactory::applyXML(tinyxml2::XMLElement* ObjectXML)
 		else if (componentName == "window")
 		{
 		object->addComponent(new Window(object, componentElement, overworld));
+		}
+		else if (componentName == "container")
+		{
+		object->addComponent(new Container(object, componentElement, this, battle, overworld));
 		}
 	}
 	return object;

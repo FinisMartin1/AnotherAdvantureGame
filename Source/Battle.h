@@ -63,6 +63,7 @@ public:
  bool inventoryOpen = false;
  bool createInventory = false;
  bool equipmentOpen = false;
+ bool contOpen = false;
 private:
 	GameObject* slectedSpace;
 	GameObject* slectedPlayer;

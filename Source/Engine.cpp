@@ -24,6 +24,7 @@ Engine::Engine(string path)
 	
 	editor.get()->setFactory(factory.get());
 	editor.get()->playLevel("beachTown_1.txt");
+	factory->createObject("82", 200, 200);
 	SDL_StopTextInput();
 
 }

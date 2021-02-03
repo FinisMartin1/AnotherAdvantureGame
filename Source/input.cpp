@@ -5,6 +5,7 @@
 #include"Equipment.h"
 #include"Dialog.h"
 #include<iostream>
+#include"Container.h"
 UserInput::UserInput(GameObject* owner, tinyxml2::XMLElement* componentElement, Battle* battle, InputHandler* input):Component(owner)
 {
 	this->input = input;
@@ -29,6 +30,7 @@ GameObject* UserInput::update()
 {
 	if (isPlayer == true)
 	{
+
 		if (input->keyStates[InputHandler::Inputs::ENDTURN] == true)
 		{
 			input->keyStates[InputHandler::Inputs::ENDTURN] = false;
@@ -210,7 +212,7 @@ GameObject* UserInput::update()
 			}
 		}
 	}
-	if (isPlayer == false)
+	if (isPlayer == false && getOwner()->id!="82")
 	{
 		if (getOwner()->getComponent<Dialog>()->getIsTalking())
 		{
@@ -232,6 +234,19 @@ GameObject* UserInput::update()
 			}
 		}
 	}
+	if (getOwner()->id == "82")
+	{
+		if (input->keyStates[InputHandler::Inputs::EXIT] == true)
+		{
+			if (getOwner()->getComponent<Container>()->getTimer() <= 0)
+			{
+				getOwner()->getComponent<Container>()->contOpen = false;
+				getOwner()->getComponent<Container>()->createCont = true;
+			}
+		}
+	}
+
+	
 	return nullptr;
 }
 

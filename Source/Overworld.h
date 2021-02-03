@@ -23,6 +23,7 @@ public:
 	GameObject* getEntityById(string id);
 	bool inventoryOpen = false;
 	bool equipmentOpen = false;
+	bool contOpen = false;
 	int time = 0;
 	int timer = 0;
 	int maxTime = 1800;

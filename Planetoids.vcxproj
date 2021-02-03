@@ -235,6 +235,7 @@ copy "$(ProjectDir)ThirdParty\SDL2\lib\x86\*.dll" "$(ProjectDir)"</Command>
     <ClInclude Include="Source\Clickable.h" />
     <ClInclude Include="Source\Component.h" />
     <ClInclude Include="Source\ContactListener.h" />
+    <ClInclude Include="Source\Container.h" />
     <ClInclude Include="Source\CreateObject.h" />
     <ClInclude Include="Source\Definitions.h" />
     <ClInclude Include="Source\DeleteSelf.h" />
@@ -292,6 +293,7 @@ copy "$(ProjectDir)ThirdParty\SDL2\lib\x86\*.dll" "$(ProjectDir)"</Command>
     <ClCompile Include="Source\Clickable.cpp" />
     <ClCompile Include="Source\Component.cpp" />
     <ClCompile Include="Source\ContactListener.cpp" />
+    <ClCompile Include="Source\Container.cpp" />
     <ClCompile Include="Source\CreateObject.cpp" />
     <ClCompile Include="Source\DeleteSelf.cpp" />
     <ClCompile Include="Source\DetectedEnemy.cpp" />

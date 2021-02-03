@@ -21,6 +21,7 @@ public:
 	void finish();
 	bool createInventory = false;
 	bool inventoryOpen = false;
+	bool contOpen = false;
 	int getTimer() { return timer; };
 	void setTimer(int timer) { this->timer = timer; };
 	void useCurrentItem(int item);
