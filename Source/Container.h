@@ -26,6 +26,8 @@ public:
 	void setTimer(int timer) { this->timer = timer; };
 	void useCurrentItem(int item);
 	void genContainer();
+	void setContainer(string file) { cont = file; genContainer(); }
+	void changeContainer();
 	int currentSpace = 0;
 	int row = 1;
 	int col = 1;

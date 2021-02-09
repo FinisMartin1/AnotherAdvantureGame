@@ -9,6 +9,7 @@
 #include "SpriteComponent.h"
 #include "Stats.h"
 #include "Clickable.h"
+#include "Container.h"
 
 // rework this
 
@@ -25,6 +26,7 @@ Engine::Engine(string path)
 	editor.get()->setFactory(factory.get());
 	editor.get()->playLevel("beachTown_1.txt");
 	factory->createObject("82", 200, 200);
+	factory->getQue().back()->getComponent<Container>()->setContainer("test.txt");
 	SDL_StopTextInput();
 
 }

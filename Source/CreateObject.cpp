@@ -3,6 +3,7 @@
 #include "GameObject.h"
 #include"RidgidBodyComponent.h"
 #include"Waypiont.h"
+#include"Container.h"
 #include<iostream>
 CreateObject::CreateObject(GameObject* owner, tinyxml2::XMLElement* componentElement, ObjectFactory* factory, LevelEditor* editor) :Component(owner)
 {
@@ -53,6 +54,13 @@ GameObject* CreateObject::update()
 			cin >> y;
 			factory->getQue().back()->getComponent<Waypoint>()->setMap(map + ".txt");
 			factory->getQue().back()->getComponent<Waypoint>()->setPlayerPosition(x,y);
+		}
+		if (editor->getBurshType() == "82")
+		{
+			string containerFile;
+			cout << "please enter container file name." << endl;
+			cin >> containerFile;
+			factory->getQue().back()->getComponent<Container>()->setContainer(containerFile);
 		}
 
 	}

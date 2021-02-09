@@ -121,3 +121,23 @@ void Container::genContainer()
 
 
 }
+void Container::changeContainer()
+{
+	ofstream file("./Assets/Containers/" + cont);
+	int item, num;
+
+
+	for (int i = 0; i < 6; i++)
+	{
+		for (int j = 0; j < 6; j++)
+		{
+			item = inventorySlots[i][j].getItemNum();
+			num = inventorySlots[i][j].getAmount();
+			file << item << num;
+
+	
+
+		}
+	}
+	file.close();
+}

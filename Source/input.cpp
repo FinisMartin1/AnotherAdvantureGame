@@ -242,6 +242,7 @@ GameObject* UserInput::update()
 			{
 				getOwner()->getComponent<Container>()->contOpen = false;
 				getOwner()->getComponent<Container>()->createCont = true;
+				getOwner()->getComponent<Container>()->changeContainer();
 			}
 		}
 	}
