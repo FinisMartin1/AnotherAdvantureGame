@@ -127,6 +127,8 @@ void LevelEditor::playLevel(string level)
 
 	view->camera->w = x;
 	view->camera->h = y;
+	file >> type >> x;
+
 	while (!file.eof())
 	{
 		file >> type >> x >> y;

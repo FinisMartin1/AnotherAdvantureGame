@@ -449,4 +449,36 @@
     <Component name="sprite" path="shallowWater.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
     <Component name="trans" alpha="180"/>
   </Object>
+  <Object type="92" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="palmTree.png" path2="" sx="0" sy="0" sw="96" sh="96" cx="10" cy="10" />
+  </Object>
+  <Object type="93" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="cliffTop_4.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+  </Object>
+  <Object type="94" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="cliffTop_1.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+  </Object>
+  <Object type="95" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="cliffTopDark_1.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+  </Object>
+  <Object type="96" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="cliffTopDark_4.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+  </Object>
+  <Object type="97" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="grassTileDark.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+  </Object>
+  <Object type="98" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="cliffTopDark_3.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+  </Object>
+  <Object type="99" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="stoneWallTopDark.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+  </Object>
 </Level>
