@@ -70,8 +70,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\Users\xman1\Documents\OpenGl\Include;$(ProjectDir)Third Party\tinyxml2-master;$(IncludePath);$(ProjectDir)Third Party\SDL2\include;$(ProjectDir)Third Party\SDL2_image;$(ProjectDir)Third Party\Box2D;$(ProjectDir)Third Party\Box2D\Box2D;$(ProjectDir)Third Party\Box2D\Box2D\Common;$(ProjectDir)Third Party\SDL2_ttf</IncludePath>
-    <LibraryPath>C:\Users\xman1\Documents\OpenGl\Libraries;$(ProjectDir)Third Party\SDL2\lib\x86;$(ProjectDir)Third Party\SDL2_image;$(ProjectDir)Third Party\Box2D\Box2D\lib;$(ProjectDir)Third Party\SDL2_ttf;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)Third Party\tinyxml2-master;$(IncludePath);$(ProjectDir)Third Party\SDL2\include;$(ProjectDir)Third Party\SDL2_image;$(ProjectDir)Third Party\Box2D;$(ProjectDir)Third Party\Box2D\Box2D;$(ProjectDir)Third Party\Box2D\Box2D\Common;$(ProjectDir)Third Party\SDL2_ttf</IncludePath>
+    <LibraryPath>$(ProjectDir)Third Party\SDL2\lib\x86;$(ProjectDir)Third Party\SDL2_image;$(ProjectDir)Third Party\Box2D\Box2D\lib;$(ProjectDir)Third Party\SDL2_ttf;$(LibraryPath)</LibraryPath>
     <OutDir>$(ProjectDir)Game\</OutDir>
     <IntDir>$(ProjectDir)Temp\</IntDir>
   </PropertyGroup>
@@ -104,7 +104,7 @@
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;glfw3.lib;opengl32.lib;Box2D.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;Box2D.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <TargetMachine>MachineX86</TargetMachine>
       <SubSystem>Console</SubSystem>
       <IgnoreAllDefaultLibraries>
@@ -113,8 +113,9 @@
     </Link>
     <PreBuildEvent>
       <Command>xcopy "$(ProjectDir)Assets" "$(ProjectDir)Game\Assets" /e /s /r /k
-copy "$(ProjectDir)Third Party\SDL2_image\*.dll" "$(ProjectDir)"
-copy "$(ProjectDir)Third Party\SDL2\lib\x86\*.dll" "$(ProjectDir)"</Command>
+copy "$(ProjectDir)Third Party\SDL2_image\lib\x86\*.dll" "$(ProjectDir)"
+copy "$(ProjectDir)Third Party\SDL2\lib\x86\*.dll" "$(ProjectDir)"
+copy "$(ProjectDir)Third Party\SDL2_ttf\lib\x86\*.dll" "$(ProjectDir)"</Command>
     </PreBuildEvent>
     <PostBuildEvent>
       <Command>
@@ -280,6 +281,7 @@ copy "$(ProjectDir)ThirdParty\SDL2\lib\x86\*.dll" "$(ProjectDir)"</Command>
     <ClInclude Include="Source\Texture.h" />
     <ClInclude Include="Source\TextureLibrary.h" />
     <ClInclude Include="Source\Timer.h" />
+    <ClInclude Include="Source\Trans.h" />
     <ClInclude Include="Source\View.h" />
     <ClInclude Include="Source\Wall.h" />
     <ClInclude Include="Source\Waypiont.h" />
@@ -335,6 +337,7 @@ copy "$(ProjectDir)ThirdParty\SDL2\lib\x86\*.dll" "$(ProjectDir)"</Command>
     <ClCompile Include="Source\Texture.cpp" />
     <ClCompile Include="Source\TextureLibrary.cpp" />
     <ClCompile Include="Source\Timer.cpp" />
+    <ClCompile Include="Source\Trans.cpp" />
     <ClCompile Include="Source\View.cpp" />
     <ClCompile Include="Source\Wall.cpp" />
     <ClCompile Include="Source\Waypoint.cpp" />

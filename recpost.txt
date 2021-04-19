@@ -1,0 +1,4 @@
+Microsoft (R) COFF/PE Editor Version 14.28.29914.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+SER.EXE : fatal error LNK1342: failed to save a backup copy of the binary file to be edited

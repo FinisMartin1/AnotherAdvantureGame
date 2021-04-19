@@ -34,6 +34,7 @@
 #include"Night.h"
 #include"Window.h"
 #include"Container.h"
+#include"Trans.h"
 #include<iostream>
 using namespace tinyxml2;
 
@@ -194,6 +195,10 @@ GameObject* ObjectFactory::applyXML(tinyxml2::XMLElement* ObjectXML)
 		else if (componentName == "container")
 		{
 		object->addComponent(new Container(object, componentElement, this, battle, overworld));
+		}
+		else if (componentName == "trans")
+		{
+		object->addComponent(new Trans(object, componentElement));
 		}
 	}
 	return object;

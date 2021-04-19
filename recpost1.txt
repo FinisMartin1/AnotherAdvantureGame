@@ -1,0 +1,6 @@
+Microsoft (R) COFF/PE Dumper Version 14.28.29914.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file SER.EXE
+LINK : fatal error LNK1181: cannot open input file 'SER.EXE'

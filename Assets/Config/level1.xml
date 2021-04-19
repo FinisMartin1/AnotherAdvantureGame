@@ -424,4 +424,29 @@
 		<Component name="sprite" path="menuOcupy.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
 		<Component name="deleteself" deletetype="7"/>
 	</Object>
+  <Object type="86" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="woodFenceFront.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+  </Object>
+  <Object type="87" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="woodFenceSideRight.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+  </Object>
+  <Object type="88" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="woodFenceSideLeft.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+  </Object>
+  <Object type="89" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="sand.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+  </Object>
+  <Object type="90" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="deepWater.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+  </Object>
+  <Object type="91" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="shallowWater.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+    <Component name="trans" alpha="180"/>
+  </Object>
 </Level>
