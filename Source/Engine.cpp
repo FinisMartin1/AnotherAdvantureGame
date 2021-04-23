@@ -438,6 +438,7 @@ void Engine::commandList(string command)
 	if (command == "saveLevel")
 	{
 		editor.get()->saveLevel(objects);
+		cout << "Save Complete!" << endl;
 	}
 	if (command == "loadLevel")
 	{
@@ -447,6 +448,7 @@ void Engine::commandList(string command)
 		objects.clear();
 	
 		editor.get()->loadLevel(level);
+		cout << "Load Complete!" << endl;
 		
 	}
 	if (command == "changeBrush")
@@ -454,6 +456,7 @@ void Engine::commandList(string command)
 		string type;
 		cin >> type;
 		editor.get()->changeBrushType(type);
+		cout << "Brush has been set to " << type << endl;
 
 	}
 	if (command == "debug")
@@ -484,13 +487,13 @@ void Engine::commandList(string command)
 		objects.clear();
 		editor.get()->playLevel(level);
 	}
-	if (command == "setBushSize")
+	if (command == "setBrushSize")
 	{
 		int x, y;
 		cin >> x >> y;
 		editor->setBrushX(x);
 		editor->setBrushY(y);
-		cout << "Brush size has been set to" << x << " x " << y << endl;
+		cout << "Brush size has been set to " << x << " x " << y << endl;
 	}
 }
 
