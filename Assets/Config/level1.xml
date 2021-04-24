@@ -481,4 +481,12 @@
     <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
     <Component name="sprite" path="stoneWallTopDark.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
   </Object>
+  <Object type="100" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="caveEntrance.png" path2="" sx="0" sy="0" sw="96" sh="96" cx="10" cy="10" />
+  </Object>
+  <Object type="101" type2="02">
+    <Component name="body" x="0" y="0" a="0" vx="0" vy="0" va="0" cx="10" cy="10"  />
+    <Component name="sprite" path="stoneWallDark.png" path2="" sx="0" sy="0" sw="32" sh="32" cx="10" cy="10" />
+  </Object>
 </Level>
