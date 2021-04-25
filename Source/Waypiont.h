@@ -4,12 +4,13 @@
 #include "tinyxml2.h"
 #include"ObjectFactory.h"
 #include"Overworld.h"
+#include"LevelEditor.h"
 #include"View.h"
 #include<string>
 class Waypoint :public Component
 {
 public:
-	Waypoint(GameObject* owner, tinyxml2::XMLElement* componentElement, ObjectFactory* factory,Overworld* overworld,View* view);
+	Waypoint(GameObject* owner, tinyxml2::XMLElement* componentElement, ObjectFactory* factory,Overworld* overworld,View* view,LevelEditor* editor);
 	~Waypoint();
 	
 	void start();
@@ -28,5 +29,6 @@ private:
 	ObjectFactory* factory;
 	Overworld* overworld;
 	View* view;
+	LevelEditor* editor;
 };
 #endif // !WAYPOINT_H

@@ -59,7 +59,7 @@ public:
 	void playLevel(string level);
 	bool isLevelEditor = false;
 	string getBrush() { return brushType; };
-
+	bool getIsEditor() { return isEditor; };
 
 private:
 	int width;
@@ -69,6 +69,7 @@ private:
 	std::string brushType = "13";
 	int brushX;
 	int brushY;
+	bool isEditor=false;
 
 };
 #endif // !LEVELEDITOR_H

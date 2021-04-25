@@ -1,5 +1,5 @@
 1500 500
-41 1
+0 0
 52 448 480 
 52 448 480 
 52 416 480 
@@ -164,7 +164,6 @@
 46 992 416 
 46 992 448 
 46 960 448 
-
 43 896 192 
 43 864 192 
 43 832 192 
@@ -216,7 +215,31 @@
 44 384 128 
 44 384 160 
 44 384 192 
- 
 51 928 480 
 52 960 480 
 52 992 480 
+52 992 480 
+49 384 480 
+beachTown_1.txt 64 64
+49 416 480 
+beachTown_1.txt 64 64
+49 448 480 
+beachTown_1.txt 64 64
+49 480 480 
+beachTown_1.txt 0 0
+49 928 480 
+beachTown_1.txt 544 64
+49 960 480 
+beachTown_1.txt 544 64
+49 992 480 
+beachTown_1.txt 544 64
+49 1024 480 
+beachTown_1.txt 544 64
+49 1472 256 
+beachTownOutSkirts_1.txt 64 288
+49 1472 224 
+beachTownOutSkirts_1.txt 64 288
+49 1472 288 
+beachTownOutSkirts_1.txt 64 288
+49 1472 192 
+beachTownOutSkirts_1.txt 64 288

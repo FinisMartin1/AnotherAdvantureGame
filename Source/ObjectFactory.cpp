@@ -182,7 +182,7 @@ GameObject* ObjectFactory::applyXML(tinyxml2::XMLElement* ObjectXML)
 		}
 		else if (componentName == "waypoint")
 		{
-		object->addComponent(new Waypoint(object, componentElement,this,overworld,view));
+		object->addComponent(new Waypoint(object, componentElement,this,overworld,view,editor));
 		}
 		else if (componentName == "night")
 		{

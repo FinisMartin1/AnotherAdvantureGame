@@ -27,6 +27,7 @@ void LevelEditor::createMap(int width,int height)
 			factory->createObject("12", i, j);
 		}
 	}
+	isEditor = true;
 }
 void LevelEditor::saveLevel(vector<GameObject*> objects)
 {
@@ -77,7 +78,7 @@ void LevelEditor::saveLevel(vector<GameObject*> objects)
 		outfile << newObjects[i]->id<<" " << newObjects[i]->getComponent<RidgidBody>()->position->x << " " << newObjects[i]->getComponent<RidgidBody>()->position->y <<" " << endl;
 		if (newObjects[i]->id == "49")
 		{
-			outfile << newObjects[i]->getComponent<Waypoint>()->getMap() << " " << newObjects[i]->getComponent<Waypoint>()->getX() << " " << newObjects[i]->getComponent<Waypoint>()->getY();
+			outfile << newObjects[i]->getComponent<Waypoint>()->getMap() << " " << newObjects[i]->getComponent<Waypoint>()->getX() << " " << newObjects[i]->getComponent<Waypoint>()->getY()<< endl;
 		}
 	}
 	outfile.close();
@@ -85,6 +86,7 @@ void LevelEditor::saveLevel(vector<GameObject*> objects)
 
 void LevelEditor::loadLevel(string level)
 {
+
 	ifstream file("./Assets/Levels/"+level);
 	string type;
 	int x;
