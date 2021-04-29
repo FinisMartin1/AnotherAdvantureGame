@@ -325,7 +325,7 @@ void Engine::update()
 	}
 	if (view->camera->x > view->camera->w)
 	{
-		view->camera->y = view->camera->w;
+		view->camera->x = view->camera->w;
 	}
 	if (view->camera->y > view->camera->h)
 	{
