@@ -1,3 +1,5 @@
+Note:GitHub won't allow me to push .lib file ,so for the code to work you need to download
+SDL2, SDL2_Image, and SDL2_ttf library's and put the files in the third party folder for the code to properly work.
 Description:
 Another Adventure Game is a grid based rpg. The character can interact with the world trough dialog with npcs and actions that the player commits.
 
