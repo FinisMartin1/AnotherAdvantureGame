@@ -78,7 +78,7 @@ void LevelEditor::saveLevel(vector<GameObject*> objects)
 		outfile << newObjects[i]->id<<" " << newObjects[i]->getComponent<RidgidBody>()->position->x << " " << newObjects[i]->getComponent<RidgidBody>()->position->y <<" " << endl;
 		if (newObjects[i]->id == "49")
 		{
-			outfile << newObjects[i]->getComponent<Waypoint>()->getMap() << " " << newObjects[i]->getComponent<Waypoint>()->getX() << " " << newObjects[i]->getComponent<Waypoint>()->getY()<< endl;
+			outfile << newObjects[i]->getComponent<Waypoint>()->getMap() << " " << newObjects[i]->getComponent<Waypoint>()->getX() << " " << newObjects[i]->getComponent<Waypoint>()->getY()<<" "<< newObjects[i]->getComponent<Waypoint>()->getBW()<<" "<<newObjects[i]->getComponent<Waypoint>()->getBW()<< endl;
 		}
 	}
 	outfile.close();
@@ -111,9 +111,12 @@ void LevelEditor::loadLevel(string level)
 			string map;
 			float px;
 			float py;
-			file >> map >> px >> py;
+			float w;
+			float h;
+			file >> map >> px >> py >> w >> h;
 			factory->getQue().back()->getComponent<Waypoint>()->setMap(map);
 			factory->getQue().back()->getComponent<Waypoint>()->setPlayerPosition(px, py);
+			factory->getQue().back()->getComponent<Waypoint>()->setBondary(w, h);
 		}
 
 	}
@@ -140,14 +143,18 @@ void LevelEditor::playLevel(string level)
 			string map;
 			float px;
 			float py;
-			file >> map >> px >> py;
+			float w;
+			float h;
+			file >> map >> px >> py >> w >> h;
 			factory->getQue().back()->getComponent<Waypoint>()->setMap(map);
 			factory->getQue().back()->getComponent<Waypoint>()->setPlayerPosition(px, py);
+			factory->getQue().back()->getComponent<Waypoint>()->setBondary(w, h);
+
 		}
 
+
 	}
-	
-	factory->createObject("01", 20,20);
+	factory->createObject("01", 20, 20);
 	factory->createObject("50", 0, 0);
 	factory->getQue().back()->getComponent<Sprite>()->changeAlpha(200);
 }

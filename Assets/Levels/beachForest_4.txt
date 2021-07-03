@@ -661,16 +661,16 @@
 92 128 0 
 92 128 0 
 49 224 0 
-beachForest_3.txt 256 700
+beachForest_3.txt 256 700 1 1
 49 256 0 
-beachForest_3.txt 256 700
+beachForest_3.txt 256 700 1 1
 49 288 0 
-beachForest_3.txt 256 700
+beachForest_3.txt 256 700 1 1
 49 320 0 
-beachForest_3.txt 256 700
+beachForest_3.txt 256 700 1 1
 49 352 0 
-beachForest_3.txt 256 700
+beachForest_3.txt 256 700 1 1
 49 384 0 
-beachForest_3.txt 256 700
+beachForest_3.txt 256 700 1 1
 49 416 0 
-beachForest_3.txt 256 700
+beachForest_3.txt 256 700 1 1

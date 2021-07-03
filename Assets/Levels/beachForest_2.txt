@@ -1092,20 +1092,22 @@
 96 256 992 
 96 256 992 
 49 288 992 
-beachForest_1.txt 384 64
+beachForest_1.txt 384 64 1 1
 49 320 992 
-beachForest_1.txt 384 64
+beachForest_1.txt 384 64 1 1
 49 352 992 
-beachForest_1.txt 384 64
+beachForest_1.txt 384 64 1 1
 49 384 992 
-beachForest_1.txt 384 64
+beachForest_1.txt 384 64 1 1
 49 416 992 
-beachForest_1.txt 384 64
+beachForest_1.txt 384 64 1 1
 49 0 416 
-beachForest_3.txt 932 416
+beachForest_3.txt 932 416 1 1
 49 0 448 
-beachForest_3.txt 932 416
+beachForest_3.txt 932 416 1 1
 49 0 480 
-beachForest_3.txt 932 416
+beachForest_3.txt 932 416 1 1
 49 0 512 
-beachForest_3.txt 932 416
+beachForest_3.txt 932 416 1 1
+49 544 0 
+beachForest_5.txt 192 690 5 1

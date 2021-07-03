@@ -24,9 +24,8 @@ Engine::Engine(string path)
 
 	
 	editor.get()->setFactory(factory.get());
-	editor.get()->playLevel("beachTown_1.txt");
-	factory->createObject("82", 200, 200);
-	factory->getQue().back()->getComponent<Container>()->setContainer("test.txt");
+	editor.get()->playLevel("beachTown_2.txt");
+
 	SDL_StopTextInput();
 
 }
@@ -323,11 +322,11 @@ void Engine::update()
 	{
 		view->camera->y = 0;
 	}
-	if (view->camera->x > view->camera->w)
+	if (view->camera->x > (view->camera->w ))
 	{
-		view->camera->x = view->camera->w;
+		view->camera->x = view->camera->w ;
 	}
-	if (view->camera->y > view->camera->h)
+	if (view->camera->y > (view->camera->h ))
 	{
 		view->camera->y = view->camera->h;
 	}
@@ -338,7 +337,9 @@ void Engine::draw()
 	gDevice->begin();
 	for (int i = 0; i < objects.size(); i++)
 	{
-		objects[i]->draw();
+		
+			objects[i]->draw();
+		
 	}
 	gDevice->present();
 }

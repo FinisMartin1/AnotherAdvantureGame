@@ -54,6 +54,10 @@ GameObject* CreateObject::update()
 			cin >> y;
 			factory->getQue().back()->getComponent<Waypoint>()->setMap(map + ".txt");
 			factory->getQue().back()->getComponent<Waypoint>()->setPlayerPosition(x,y);
+			cout << "Objects boundery width:height" << endl;
+			cin >> x;
+			cin >> y;
+			factory->getQue().back()->getComponent<Waypoint>()->setBondary(x, y);
 		}
 		if (editor->getBurshType() == "82")
 		{

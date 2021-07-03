@@ -32,11 +32,11 @@ GameObject* Waypoint::update()
 	{
 		player = overworld->getEntityById("01");
 		pos->x = getOwner()->getComponent<RidgidBody>()->position->x;
-		pos->y = getOwner()->getComponent<RidgidBody>()->position->y;
+		pos->y = getOwner()->getComponent<RidgidBody>()->position->y*h;
 		playerPos->x = player->getComponent<RidgidBody>()->position->x;
 		playerPos->y = player->getComponent<RidgidBody>()->position->y;
 
-		if (playerPos->x > pos->x && playerPos->x<(pos->x + 32) && playerPos->y>pos->y && playerPos->y < (pos->y + 32))
+		if (playerPos->x > pos->x && playerPos->x<(pos->x + (32*w)) && playerPos->y>pos->y && playerPos->y < (pos->y + (32*h))&& factory->mapChange==false)
 		{
 			ifstream file("./Assets/Levels/" + map);
 			string type;
@@ -64,9 +64,12 @@ GameObject* Waypoint::update()
 					string map;
 					float px;
 					float py;
-					file >> map >> px >> py;
+					float w;
+					float h;
+					file >> map >> px >> py >> w >> h;
 					factory->getQue().back()->getComponent<Waypoint>()->setMap(map);
 					factory->getQue().back()->getComponent<Waypoint>()->setPlayerPosition(px, py);
+					factory->getQue().back()->getComponent<Waypoint>()->setBondary(w, h);
 				}
 
 			}
