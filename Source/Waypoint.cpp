@@ -32,7 +32,7 @@ GameObject* Waypoint::update()
 	{
 		player = overworld->getEntityById("01");
 		pos->x = getOwner()->getComponent<RidgidBody>()->position->x;
-		pos->y = getOwner()->getComponent<RidgidBody>()->position->y*h;
+		pos->y = getOwner()->getComponent<RidgidBody>()->position->y;
 		playerPos->x = player->getComponent<RidgidBody>()->position->x;
 		playerPos->y = player->getComponent<RidgidBody>()->position->y;
 

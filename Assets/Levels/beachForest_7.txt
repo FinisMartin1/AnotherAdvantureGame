@@ -850,4 +850,6 @@
 92 704 960 
 92 704 960 
 49 0 192 
-beachForest_6.txt 1120 340 1 1
+beachForest_6.txt 1120 340 1 10
+49 768 832 
+beachForest_8.txt 74 1210 1 5

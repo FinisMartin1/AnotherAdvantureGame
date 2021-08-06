@@ -66,7 +66,7 @@ private:
 	int height;
 	ObjectFactory* factory;
 	View* view;
-	std::string brushType = "13";
+	std::string brushType = "49";
 	int brushX;
 	int brushY;
 	bool isEditor=false;

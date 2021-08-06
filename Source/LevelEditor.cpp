@@ -78,7 +78,7 @@ void LevelEditor::saveLevel(vector<GameObject*> objects)
 		outfile << newObjects[i]->id<<" " << newObjects[i]->getComponent<RidgidBody>()->position->x << " " << newObjects[i]->getComponent<RidgidBody>()->position->y <<" " << endl;
 		if (newObjects[i]->id == "49")
 		{
-			outfile << newObjects[i]->getComponent<Waypoint>()->getMap() << " " << newObjects[i]->getComponent<Waypoint>()->getX() << " " << newObjects[i]->getComponent<Waypoint>()->getY()<<" "<< newObjects[i]->getComponent<Waypoint>()->getBW()<<" "<<newObjects[i]->getComponent<Waypoint>()->getBW()<< endl;
+			outfile << newObjects[i]->getComponent<Waypoint>()->getMap() << " " << newObjects[i]->getComponent<Waypoint>()->getX() << " " << newObjects[i]->getComponent<Waypoint>()->getY()<<" "<< newObjects[i]->getComponent<Waypoint>()->getBW()<<" "<<newObjects[i]->getComponent<Waypoint>()->getBH()<< endl;
 		}
 	}
 	outfile.close();
